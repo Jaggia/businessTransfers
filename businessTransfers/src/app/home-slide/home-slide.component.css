@@ -1,0 +1,122 @@
+#topParagraph {
+  position: relative;
+  float: left;
+  padding-top:5vh;
+}
+
+#box1 {
+  position: relative;
+  float: left;
+  margin-left: 5%;
+}
+
+#box2 {
+  position: relative;
+  float: right;
+}
+
+.slide {
+    background-image:url('../../assets/homeImage.jpg');
+    min-height: 100vh;
+    min-width: 100vw;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    justify-content: center;
+    position:relative;
+}
+
+.blurred-bg-1{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+  background-repeat:no-repeat;
+	@include background-size(cover);
+	background-attachment: fixed;
+}
+.blurred-bg-2{
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+  background-repeat:no-repeat;
+	@include background-size(cover);
+	background-attachment: fixed;
+}
+
+.box{
+  padding-top:5vh;
+	width:500px;
+	height:300px;
+	position:relative;
+	border-radius:5px;
+	@include box-shadow(0 20px 30px rgba(0,0,0,.6));
+	border:1px solid rgba(255,255,255,.3);
+	padding:20px;
+	text-align: center;
+	@include box-sizing(border-box);
+	text-shadow:0 1px 1px rgba(0,0,0,.4);
+  display: flex;
+  transition: box-shadow .3s ease;
+
+	&:active{
+    cursor:move;
+    @include box-shadow(0 20px 50px rgba(0,0,0,.9));
+  }
+
+  .content{
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    max-width: 90vw;
+    max-height: 100vh;
+    overflow: auto;
+    /*margin: 20px;*/
+  }
+  .content {
+    overflow: auto;
+    /*margin-bottom: 20px;*/
+  }
+  #box2 > .content {
+    margin-bottom: 60px;
+  }
+  .slide {
+    margin-bottom: 50px;
+    overflow: auto;
+    max-height: 100vh;
+  }
+}
+
+h1,h2,a,p{
+	color:white;
+	font-weight:100;
+
+	.tinted &{
+		color:black;
+		text-shadow:0 1px 1px rgba(255,255,255,.2);
+	}
+}
+h2{ font-size: 14px }
+p{
+  margin: 20px;
+  &.related{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #444;
+    a{
+      font-weight: 700;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+h1 {
+  color : white;
+  font-weight: 300;
+}
+p{
+  font-size: 17px;
+  font-weight: 200;
+}

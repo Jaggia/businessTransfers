@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "web"
+    "name": "business-transfers"
   },
   "apps": [
     {
@@ -20,16 +20,13 @@
       "prefix": "app",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "../node_modules/font-awesome/scss/font-awesome.scss",
-        "../node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
-        "../node_modules/angular-bootstrap-md/scss/mdb-free.scss",
-        "styles.scss"
+        "../node_modules/font-awesome/css/font-awesome.min.css",
+        "styles.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "../node_modules/chart.js/dist/Chart.js",
-        "../node_modules/hammerjs/hammer.min.js"
+        "../node_modules/tether/dist/js/tether.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -45,16 +42,13 @@
   },
   "lint": [
     {
-      "project": "src/tsconfig.app.json",
-      "exclude": "**/node_modules/**"
+      "project": "src/tsconfig.app.json"
     },
     {
-      "project": "src/tsconfig.spec.json",
-      "exclude": "**/node_modules/**"
+      "project": "src/tsconfig.spec.json"
     },
     {
-      "project": "e2e/tsconfig.e2e.json",
-      "exclude": "**/node_modules/**"
+      "project": "e2e/tsconfig.e2e.json"
     }
   ],
   "test": {
@@ -63,7 +57,7 @@
     }
   },
   "defaults": {
-    "styleExt": "scss",
+    "styleExt": "css",
     "component": {}
   }
 }

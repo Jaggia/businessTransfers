@@ -1,0 +1,86 @@
+<div class="container-fluid">
+  <div class="row slide">
+
+    <div class="col-md-9 col-xs-12" id="topParagraph">
+      <div id="box1" class="box blurred-bg-1 tinted">
+        <div class="content">
+          <h1>BTS has two offices to serve you:</h1>
+          <table width="100%" cellspacing="0" cellpadding="5" border="0">
+            <tbody>
+              <tr>
+                <td valign="baseline" align="right">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td align="right">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <agm-map [latitude]="lat" [longitude]="lng">
+                                  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                                </agm-map>
+                              </tr>
+                              <tr>
+                                <td align="center"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td width="100%">
+                  <div align="left">
+                    <p>
+                      <strong>Massachusetts Office:</strong><br>
+                      67 South Bedford Street <br>
+                      Suite 400W <br>
+                      Burlington, MA  01803 <br>
+                      (781) 229-5857
+                    </p>
+                    <p>
+                      <strong>New Hampshire Office:</strong> <br>
+                      Windham, NH  03087 <br>
+                      (603) 425-0110 <br>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <h1>Or contact us using the following form: </h1>
+          <form id="myForm" action="mailto:steve.smith@business-transfers.com" method="post" enctype="text/plain">
+                    <table border="0" align="center">
+                      <tbody>
+                        <tr>
+                          <td>Name:</td>
+                          <td><input type="text" name="Name"></td>
+                        <tr>
+                          <td>Address:</td>
+                          <td><input type="text" name="Address"></td>
+                        </tr>
+                        <tr>
+                          <td>Phone Number:</td>
+                          <td><input type="number" name="Phone Number"></td>
+                        </tr>
+                        <tr>
+                          <td>E-mail:</td>
+                          <td><input type="email" name="E-mail"></td>
+                        </tr>
+                        <tr>
+                          <td>Information Requested:</td>
+                          <td><textarea name="Information Requested" cols="22" form="myForm"></textarea></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <input type="submit" class="btn btn-large" value="Send">
+                  </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,131 @@
+html { overflow-y: scroll; }
+body { position: absolute; }
+
+#topParagraph {
+  position: relative;
+  float: left;
+  padding-top:5vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+}
+
+.slide {
+    background-image:url('../../assets/homeImage.jpg');
+    max-height: 100vh;
+    min-width: 100vw;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    justify-content: center;
+    position:relative;
+    overflow-y: scroll;
+    padding-bottom: 5%;
+}
+
+.blurred-bg-1{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6));
+  background-repeat:repeat;
+	@include background-size(cover);
+	background-attachment: scroll;
+}
+
+.box{
+  padding-top:5vh;
+	width:auto;
+  height: auto;
+	position:relative;
+	border-radius:5px;
+	@include box-shadow(0 20px 30px rgba(0,0,0,.6));
+	border:1px solid rgba(255,255,255,.3);
+	padding:20px;
+	text-align: center;
+  margin-top: 5vh;
+  margin-left: 10vw;
+	@include box-sizing(border-box);
+	text-shadow:0 1px 1px rgba(0,0,0,.4);
+  display: inline-flex;
+  transition: box-shadow .3s ease;
+  overflow: auto;
+	&:active{
+    @include box-shadow(0 20px 50px rgba(0,0,0,.9));
+  }
+
+  .content{
+    margin: auto;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    max-width: 90vw;
+    max-height: 100vh;
+    overflow: auto;
+    margin-left: 5vw;
+  }
+  .content {
+    overflow: auto;
+  }
+  .slide {
+    margin-bottom: 50px;
+    overflow: auto;
+    max-height: 100vh;
+  }
+}
+
+h1,h2,a,p, li, table{
+	color:white;
+	font-weight:100;
+
+	.tinted &{
+		color:black;
+		text-shadow:0 1px 1px rgba(255,255,255,.2);
+    overflow: scroll;
+
+	}
+}
+h2{ font-size: 14px }
+p{
+  margin: 20px;
+  &.related{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #444;
+
+    a{
+      font-weight: 700;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.goLeft, li {
+  text-align: left;
+}
+/*th, td { resize: both; overflow: auto; }*/
+agm-map {
+  height: 300px;
+  width: 35vw;
+}
+table {
+  color: white;
+}
+.goLeft , li{
+  font-size: 17px;
+  font-weight: 200;
+  text-align: left;
+}
+
+h1 {
+  color : white;
+  font-weight: 300;
+}
+p, a, td{
+  font-size: 17px;
+  font-weight: 200;
+}
