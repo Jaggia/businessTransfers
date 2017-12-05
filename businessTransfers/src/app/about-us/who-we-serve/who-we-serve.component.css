@@ -7,16 +7,17 @@
 }
 
 .slide {
-    background-image:url('../../../assets/homeImage.jpg');
-    min-height: 100vh;
-    min-width: 100vw;
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    justify-content: center;
-    position:relative;
-    padding-bottom: 5%;
+  background-image:url('../../../assets/homeImage.jpg');
+  max-height: 100vh;
+  min-width: 100vw;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  justify-content: center;
+  position:relative;
+  overflow-y: scroll;
+  padding-bottom: 5%;
 }
 
 .blurred-bg-1{
@@ -72,7 +73,7 @@
   }
 }
 
-h1,h2,a,p, li{
+h1,a,p, li{
 	color:white;
 	font-weight:100;
 
@@ -81,7 +82,6 @@ h1,h2,a,p, li{
 		text-shadow:0 1px 1px rgba(255,255,255,.2);
 	}
 }
-h2{ font-size: 14px }
 p{
   margin: 20px;
   &.related{
@@ -109,6 +109,14 @@ h1 {
   color : white;
   font-weight: 300;
 }
+
+h2 {
+  margin: 20px;
+  text-align: left;
+  color : white;
+  font-weight: 200;
+}
+
 p{
   font-size: 17px;
   font-weight: 200;
