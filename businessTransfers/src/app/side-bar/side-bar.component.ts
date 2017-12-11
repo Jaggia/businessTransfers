@@ -12,15 +12,4 @@ export class SideBarComponent implements OnInit {
   ngOnInit() {
   }
 
-  collapseBar() {
-    alert('slkdfj')
-    $(function() {
-      $('#menu-content').on('click', function(){
-        if ($('.navbar-toggler').css('display') !== 'none') {
-          $('.navbar-toggler').trigger( 'click' );
-        }
-      });
-    });
-  }
-
 }

@@ -128,14 +128,14 @@ img {
 }
 @media (max-width: 767px) {
   .nav-side-menu {
-    position: relative;
+    position: static;
     width: 100%;
     margin-bottom: 10px;
   }
   .nav-side-menu .toggle-btn {
     display: block;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 10px;
     top: 10px;
     /*z-index: 10 !important;*/
