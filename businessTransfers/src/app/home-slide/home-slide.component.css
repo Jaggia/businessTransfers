@@ -62,6 +62,7 @@
 
   .content{
     margin: auto;
+    overflow: hidden;
   }
 }
 
@@ -69,15 +70,16 @@
   .box {
     max-width: 90vw;
     max-height: 100vh;
-    overflow: auto;
+    overflow: hidden;
     /*margin: 20px;*/
   }
   .content {
-    overflow: auto;
+    overflow: hidden;
     /*margin-bottom: 20px;*/
   }
   #box2 > .content {
     margin-bottom: 60px;
+    overflow: hidden;
   }
   .slide {
     margin-bottom: 50px;

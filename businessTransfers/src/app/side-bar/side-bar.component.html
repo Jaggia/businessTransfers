@@ -6,55 +6,69 @@
     </i>
     <div class="menu-list">
         <ul id="menu-content" class="menu-content collapse out active">
-            <li routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <li data-toggle="collapse" data-target="#menu-content" routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
                 <a>
                     <i class="fa fa-home fa-lg"></i> Home
                 </a>
             </li>
-            <li routerLink="/about-us" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" data-toggle="collapse" data-target="#about" class="collapsed">
+            <li  data-toggle="collapse" data-target="#menu-content"
+                 routerLink="/about-us" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" class="collapsed">
                 <a>
                   <i class="fa fa-info-circle fa-lg"></i> About Us<i class="fa fa-chevron-down"></i>
                 </a>
             </li>
-            <ul class="sub-menu collapse" id="about">
-                <li routerLink="/btsoverview" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>BTS Overview</a></li>
-                <li routerLink="/who-we-serve" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>Who We Serve</a></li>
-                <li routerLink="/transactions" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>Transaction Experience</a></li>
-                <li routerLink="/why-hire-us" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>Why Hire Us</a></li>
+            <ul class="sub-menu" id="about">
+                <li  data-toggle="collapse" data-target="#menu-content"
+                     routerLink="/btsoverview" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>BTS Overview</a></li>
+                <li  data-toggle="collapse" data-target="#menu-content"
+                     routerLink="/who-we-serve" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>Who We Serve</a></li>
+                <li  data-toggle="collapse" data-target="#menu-content"
+                     routerLink="/transactions" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>Transaction Experience</a></li>
+                <li  data-toggle="collapse" data-target="#menu-content"
+                     routerLink="/why-hire-us" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>Why Hire Us</a></li>
             </ul>
 
-            <li routerLink="advisors" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <li  data-toggle="collapse" data-target="#menu-content"
+                 routerLink="advisors" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
                 <a>
                     <i class="fa fa-users fa-lg"></i> Our Advisors
                 </a>
             </li>
 
-            <li routerLink="/process" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" data-toggle="collapse" data-target="#process" class="collapsed">
+            <li  data-toggle="collapse" data-target="#menu-content"
+                 routerLink="/process" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" class="collapsed">
                 <a>
                   <i class="fa fa-bar-chart fa-lg"></i> Our Process<i class="fa fa-chevron-down"></i>
                 </a>
             </li>
-            <ul class="sub-menu collapse" id="process">
-                <li routerLink="phase1" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>Phase 1 - Preparation</a></li>
-                <li routerLink="phase2" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>Phase 2 - Business Selection</a></li>
-                <li routerLink="phase3" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>Phase 3 - Business Acquisition</a></li>
+            <ul class="sub-menu" id="process">
+                <li  data-toggle="collapse" data-target="#menu-content"
+                     routerLink="phase1" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>Phase 1 - Preparation</a></li>
+                <li  data-toggle="collapse" data-target="#menu-content"
+                     routerLink="phase2" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>Phase 2 - Business Selection</a></li>
+                <li  data-toggle="collapse" data-target="#menu-content"
+                     routerLink="phase3" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>Phase 3 - Business Acquisition</a></li>
             </ul>
-            <li routerLink="/testimonials" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <li  data-toggle="collapse" data-target="#menu-content"
+                 routerLink="/testimonials" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
                 <a>
                     <i class="fa fa-comments-o fa-lg"></i> Testimonials
                 </a>
             </li>
-            <li routerLink="/news" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <li  data-toggle="collapse" data-target="#menu-content"
+                 routerLink="/news" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
                 <a>
                     <i class="fa fa-newspaper-o fa-lg"></i> In The News
                 </a>
             </li>
-            <li routerLink="/resources" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <li  data-toggle="collapse" data-target="#menu-content"
+                 routerLink="/resources" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
                 <a>
                     <i class="fa fa-tint fa-lg"></i> Resources
                 </a>
             </li>
-            <li routerLink="/contactus" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <li  data-toggle="collapse" data-target="#menu-content"
+                 routerLink="/contactus" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
                 <a>
                     <i class="fa fa-phone fa-lg"></i> Contact Us
                 </a>
