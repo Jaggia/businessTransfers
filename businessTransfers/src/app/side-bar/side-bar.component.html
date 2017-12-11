@@ -5,7 +5,7 @@
     <i  id="bars" class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content">
     </i>
     <div class="menu-list">
-        <ul id="menu-content" class="menu-content collapse out active">
+        <ul id="menu-content" class="menu-content collapse out active" (click)="collapseMe()">
             <li id="firstListItem" routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
                 <a>
                     <i class="fa fa-home fa-lg"></i> Home

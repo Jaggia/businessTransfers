@@ -12,4 +12,10 @@ export class SideBarComponent implements OnInit {
   ngOnInit() {
   }
 
+  collapseMe() {
+    if ($('ul').hasClass('in')){
+      $('ul').removeClass('in');
+    }
+  }
+
 }
