@@ -63,7 +63,8 @@
     margin-bottom: 40px;
   }
   .content {
-    overflow: auto;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
   .slide {
     margin-bottom: 22%;

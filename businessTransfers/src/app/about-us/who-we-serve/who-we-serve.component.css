@@ -65,7 +65,8 @@
     overflow: auto;
   }
   .content {
-    overflow: auto;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
   .slide {
     padding-bottom: 5%;
