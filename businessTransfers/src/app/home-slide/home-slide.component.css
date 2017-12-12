@@ -14,6 +14,7 @@
 #box2 {
   position: relative;
   float: right;
+  margin-bottom: 250px;
 }
 
 .slide {
@@ -26,6 +27,8 @@
     background-size: cover;
     justify-content: center;
     position:relative;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 }
 
 .blurred-bg-1{
@@ -42,7 +45,6 @@
 }
 
 .box{
-  padding-top:5vh;
 	width:500px;
 	height:300px;
 	position:relative;
@@ -63,7 +65,8 @@
 
   .content{
     margin: auto;
-    overflow: hidden;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -71,21 +74,29 @@
   .box {
     max-width: 90vw;
     max-height: 100vh;
-    overflow: hidden;
-    /*margin: 20px;*/
+  }
+  #box1 {
+    height: 250px;
+  }
+  #box2 {
+    height: 320px;
   }
   .content {
-    overflow: hidden;
-    /*margin-bottom: 20px;*/
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
   #box2 > .content {
-    margin-bottom: 60px;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    height: 320px;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px;
   }
   .slide {
-    margin-bottom: 50px;
-    overflow: auto;
-    max-height: 100vh;
+    margin-bottom: 500px;
+    min-height: 100vh;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
 }
 

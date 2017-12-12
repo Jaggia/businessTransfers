@@ -68,7 +68,8 @@
   }
   .slide {
     margin-bottom: 22%;
-    overflow: auto;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
 }
 
