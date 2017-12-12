@@ -11,23 +11,23 @@ body { position: absolute; }
 }
 
 .slide {
-    background-image:url('../../../assets/homeImage.jpg');
-    max-height: 100vh;
-    min-width: 100vw;
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    justify-content: center;
-    position:relative;
-    overflow-y: scroll;
-    padding-bottom: 5%;
+  background-image:url('../../../assets/homeImage.jpg');
+  min-height: 100vh;
+  min-width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  justify-content: center;
+  position:relative;
+  overflow-y: scroll;
+  padding-bottom: 5%;
 }
 
 .blurred-bg-1{
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
   background-repeat:repeat;
-	/*@include background-size(cover);*/
+	@include background-size(cover);
 	background-attachment: scroll;
 }
 
@@ -118,3 +118,39 @@ p, td, tr{
   font-size: 17px;
   font-weight: 200;
 }
+
+
+.tg  {
+  border-collapse:collapse;
+  border-spacing:0;
+  margin:0px auto;
+}
+.tg td{font-family:Arial, sans-serif;
+  font-size:17px;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:1px;
+  overflow:auto;
+  word-break:normal;
+  text-align: center;
+}
+.tg th{font-family:Arial, sans-serif;
+  font-size:17px;
+  font-weight:200;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:1px;
+  overflow:auto;
+  word-break:normal;
+  text-align: center;
+}
+.tg .tg-yw4l{
+  vertical-align:top
+}
+@media screen and (max-width: 767px) {
+  .tg {width: auto !important;
+  }.tg col {width: auto !important;
+     }.tg-wrap {overflow-x: auto;
+             -webkit-overflow-scrolling: touch;
+             margin: auto 0px;
+           }}
