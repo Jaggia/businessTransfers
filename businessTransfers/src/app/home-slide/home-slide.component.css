@@ -19,7 +19,7 @@
 
 .slide {
     background-image:url('../../assets/homeImage.jpg');
-    min-height: 100vh;
+    max-height: 100vh;
     min-width: 100vw;
     background-attachment: scroll;
     background-position: center;
@@ -32,16 +32,16 @@
 }
 
 .blurred-bg-1{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
-  background-repeat:no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+  background-repeat:repeat-y;
 	@include background-size(cover);
 	background-attachment: fixed;
 }
 .blurred-bg-2{
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
-  background-repeat:no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+  background-repeat:repeat-y;
 	@include background-size(cover);
-	background-attachment: fixed;
+	background-attachment: scroll;
 }
 
 .box{
@@ -76,20 +76,22 @@
     max-height: 100vh;
   }
   #box1 {
-    height: 250px;
+    height: auto;
+    margin-left: 4vw;
   }
   #box2 {
-    height: 320px;
+    height: auto;
   }
   .content {
     /*overflow-y: scroll; !* has to be scroll, not auto *!*/
     /*-webkit-overflow-scrolling: touch;*/
+    height: auto;
   }
   #box2 > .content {
     /*overflow: hidden;*/
-    height: 320px;
-    overflow-y: scroll; /* has to be scroll, not auto */
-    -webkit-overflow-scrolling: touch;
+    height: auto;
+    /*overflow-y: scroll; !* has to be scroll, not auto *!*/
+    /*-webkit-overflow-scrolling: touch;*/
     margin-bottom: 20px;
   }
   .slide {
