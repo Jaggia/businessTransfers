@@ -1,5 +1,5 @@
-/*html { overflow-y: scroll; }*/
-/*body { position: absolute; }*/
+html { overflow-y: scroll; }
+body { position: absolute; }
 
 #topParagraph {
   position: relative;
@@ -14,7 +14,7 @@
   background-image:url('../../../assets/homeImage.jpg');
   max-height: 100vh;
   min-width: 100vw;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
@@ -25,45 +25,45 @@
 }
 
 .blurred-bg-1{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
   background-repeat:repeat;
-	@include background-size(cover);
-	background-attachment: scroll;
+@include background-size(cover);
+  background-attachment: scroll;
 }
 
 .box{
-  padding-top:5vh;
-	width:auto;
+  width:auto;
   height: auto;
-	position:relative;
-	border-radius:5px;
-	@include box-shadow(0 20px 30px rgba(0,0,0,.6));
-	border:1px solid rgba(255,255,255,.3);
-	padding:20px;
-	text-align: center;
-	@include box-sizing(border-box);
-	text-shadow:0 1px 1px rgba(0,0,0,.4);
+  position:relative;
+  border-radius:5px;
+  padding:20px;
+@include box-shadow(0 20px 30px rgba(0,0,0,.6));
+  border:1px solid rgba(255,255,255,.3);
+  text-align: center;
+@include box-sizing(border-box);
+  text-shadow:0 1px 1px rgba(0,0,0,.4);
   display: inline-flex;
   margin-top: 3vh;
-  margin-left: 8vw;
+  margin-left: 5vw;
   transition: box-shadow .3s ease;
-  /*overflow: auto; */
-	&:active{
-    @include box-shadow(0 20px 50px rgba(0,0,0,.9));
-  }
+  overflow: auto;
+&:active{
+ @include box-shadow(0 20px 50px rgba(0,0,0,.9));
+ }
 
-  .content{
-    margin: auto;
-    /*overflow: auto;*/
-  }
+.content{
+  margin: auto;
+  overflow: auto;
+}
 }
 
 @media (max-width: 768px) {
   .box {
-    max-width: 90vw;
-    max-height: 70vh;
-    margin-right: 4vw;
+    max-width: 95vw;
+    max-height: 75vh;
     overflow: auto;
+    margin-top:0;
+    margin-left: 0vw;
   }
   .content {
     overflow-y: scroll; /* has to be scroll, not auto */
@@ -77,46 +77,45 @@
 }
 
 h1,h2,a,p, li, table{
-	color:white;
-	font-weight:100;
+  color:white;
+  font-weight:100;
 
-	.tinted &{
-		color:black;
-		text-shadow:0 1px 1px rgba(255,255,255,.2);
-    overflow: scroll;
+.tinted &{
+  color:black;
+  text-shadow:0 1px 1px rgba(255,255,255,.2);
+  overflow: scroll;
 
-	}
+}
 }
 h2{ font-size: 14px }
 p{
   margin: 20px;
-  &.related{
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #444;
+&.related{
+   text-transform: uppercase;
+   font-weight: 700;
+   color: #444;
 
-    a{
-      font-weight: 700;
-      text-decoration: none;
-      &:hover{
-        text-decoration: underline;
-      }
-    }
-  }
+a{
+  font-weight: 700;
+  text-decoration: none;
+&:hover{
+   text-decoration: underline;
+ }
+}
+}
 }
 
 .goLeft, li {
+  text-align: left;
   font-size: 17px;
   font-weight: 200;
-  text-align: left;
 }
 /*th, td { resize: both; overflow: auto; }*/
-
 h1 {
   color : white;
   font-weight: 300;
 }
-p, a{
-  font-size: 17px;
+p, td, tr{
+  font-size: 15px;
   font-weight: 200;
 }
