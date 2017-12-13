@@ -61,12 +61,13 @@ body { position: absolute; }
 @media (max-width: 768px) {
   .box {
     max-width: 90vw;
-    max-height: 100vh;
+    max-height: 80vh;
     overflow: auto;
     margin-left: 5vw;
   }
   .content {
-    overflow: auto;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
   .slide {
     margin-bottom: 50px;

@@ -5,6 +5,9 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 5vh;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 }
 
 .slide {
@@ -17,7 +20,8 @@
     background-size: cover;
     justify-content: center;
     position:relative;
-    overflow: scroll;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
 }
 
 .blurred-bg-1{
@@ -56,18 +60,22 @@
 @media (max-width: 768px) {
   .box {
     max-width: 100vw;
-    max-height: 90vh;
-    overflow: auto;
+    max-height: 85vh;
     margin-top: 0vw;
     margin-right: 10vw;
     margin-bottom: 40px;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
   .content {
-    overflow: auto;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
   .slide {
+    min-height: 100vh;
     margin-bottom: 22%;
-    overflow: auto;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
 }
 

@@ -59,13 +59,14 @@
   }
   .box {
     max-width: 100vw;
-    max-height: 90vh;
+    max-height: 85vh;
     margin-right:10vw;
     margin-top:0;
     overflow: auto;
   }
   .content {
-    overflow: auto;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
   .slide {
     padding-bottom: 5%;

@@ -19,11 +19,12 @@
 #box2 {
   position: relative;
   float: right;
+  margin-bottom: 250px;
 }
 
 .slide {
     background-image:url('../../assets/homeImage.jpg');
-    min-height: 100vh;
+    max-height: 100vh;
     min-width: 100vw;
     background-attachment: scroll;
     background-position: center;
@@ -31,23 +32,24 @@
     background-size: cover;
     justify-content: center;
     position:relative;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 }
 
 .blurred-bg-1{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
-  background-repeat:no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+  background-repeat:repeat-y;
 	@include background-size(cover);
 	background-attachment: fixed;
 }
 .blurred-bg-2{
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
-  background-repeat:no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+  background-repeat:repeat-y;
 	@include background-size(cover);
-	background-attachment: fixed;
+	background-attachment: scroll;
 }
 
 .box{
-  padding-top:5vh;
 	width:500px;
 	height:300px;
 	position:relative;
@@ -68,7 +70,8 @@
 
   .content{
     margin: auto;
-    overflow: hidden;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -76,21 +79,31 @@
   .box {
     max-width: 90vw;
     max-height: 100vh;
-    overflow: hidden;
-    /*margin: 20px;*/
+  }
+  #box1 {
+    height: auto;
+    margin-left: 4vw;
+  }
+  #box2 {
+    height: auto;
   }
   .content {
-    overflow: hidden;
-    /*margin-bottom: 20px;*/
+    /*overflow-y: scroll; !* has to be scroll, not auto *!*/
+    /*-webkit-overflow-scrolling: touch;*/
+    height: auto;
   }
   #box2 > .content {
-    margin-bottom: 60px;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    height: auto;
+    /*overflow-y: scroll; !* has to be scroll, not auto *!*/
+    /*-webkit-overflow-scrolling: touch;*/
+    margin-bottom: 20px;
   }
   .slide {
-    margin-bottom: 50px;
-    overflow: auto;
-    max-height: 100vh;
+    margin-bottom: 500px;
+    min-height: 100vh;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
   }
 }
 
