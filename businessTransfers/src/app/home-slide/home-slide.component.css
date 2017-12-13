@@ -37,13 +37,13 @@
 }
 
 .blurred-bg-1{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7));
   background-repeat:repeat-y;
 	@include background-size(cover);
 	background-attachment: fixed;
 }
 .blurred-bg-2{
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7));
   background-repeat:repeat-y;
 	@include background-size(cover);
 	background-attachment: scroll;
@@ -116,7 +116,7 @@ h1,h2,a,p{
 		text-shadow:0 1px 1px rgba(255,255,255,.2);
 	}
 }
-h2{ font-size: 14px }
+h2{ font-size: 14px;}
 p{
   margin: 20px;
   &.related{
@@ -140,4 +140,12 @@ h1 {
 p{
   font-size: 17px;
   font-weight: 200;
+}
+
+#box1 .content > h1 {
+  color : #9E8145;
+}
+
+#box2 .content > h1 {
+  color : #1F486B;
 }
