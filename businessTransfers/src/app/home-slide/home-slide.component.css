@@ -82,8 +82,8 @@
     height: 320px;
   }
   .content {
-    overflow-y: scroll; /* has to be scroll, not auto */
-    -webkit-overflow-scrolling: touch;
+    /*overflow-y: scroll; !* has to be scroll, not auto *!*/
+    /*-webkit-overflow-scrolling: touch;*/
   }
   #box2 > .content {
     /*overflow: hidden;*/

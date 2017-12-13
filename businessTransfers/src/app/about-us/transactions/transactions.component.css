@@ -59,11 +59,11 @@ body { position: absolute; }
 
 @media (max-width: 768px) {
   .box {
-    max-width: 90vw;
-    max-height: 100vh;
-    margin-right: 15w;
+    max-width: 95vw;
+    max-height: 85vh;
     overflow: auto;
     margin-top:0;
+    margin-left: 0vw;
   }
   .content {
     overflow-y: scroll; /* has to be scroll, not auto */
@@ -116,6 +116,6 @@ h1 {
   font-weight: 300;
 }
 p, td, tr{
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 200;
 }
