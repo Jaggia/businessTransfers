@@ -61,7 +61,7 @@ html { overflow-y: scroll; }
 @media (max-width: 768px) {
   .box {
     max-width: 90vw;
-    max-height: 75vh;
+    max-height: 70vh;
     overflow: auto;
     margin-right: 4vw;
   }
