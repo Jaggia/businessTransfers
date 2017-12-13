@@ -56,7 +56,7 @@
 @media (max-width: 768px) {
   .box {
     max-width: 100vw;
-    max-height: 85vh;
+    max-height: 75vh;
     overflow: auto;
     margin-right:10vw;
     margin-top:0;
