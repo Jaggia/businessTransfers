@@ -130,3 +130,13 @@ p, a, td{
   font-size: 17px;
   font-weight: 200;
 }
+.content > h1 {
+  color : #9E8145;
+}
+input, textarea {
+  color : black;
+}
+.btn {
+  background-color: #9E8145;
+  font-size: 17px;
+}

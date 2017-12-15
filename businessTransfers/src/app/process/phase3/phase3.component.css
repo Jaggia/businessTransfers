@@ -119,3 +119,6 @@ p, td, tr{
   font-size: 15px;
   font-weight: 200;
 }
+.content > h1 {
+  color : #9E8145;
+}

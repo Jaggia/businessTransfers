@@ -122,3 +122,6 @@ p, a{
 }
 
 /*th, td { resize: both; overflow: auto; }*/
+.content > h1 {
+  color : #9E8145;
+}

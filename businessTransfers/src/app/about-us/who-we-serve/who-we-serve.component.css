@@ -122,3 +122,6 @@ p{
   font-size: 17px;
   font-weight: 200;
 }
+.content > h1 {
+  color : #9E8145;
+}

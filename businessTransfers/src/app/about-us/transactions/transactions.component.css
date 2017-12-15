@@ -162,3 +162,6 @@ p, td, tr{
              -webkit-overflow-scrolling: touch;
              margin: auto 0px;
            }}
+.content > h1 {
+  color : #9E8145;
+}
