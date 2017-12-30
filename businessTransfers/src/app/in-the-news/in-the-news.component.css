@@ -114,6 +114,7 @@ h1 {
   font-weight: 300;
 }
 p, a{
+  text-align: justify;
   font-size: 17px;
   font-weight: 200;
 }

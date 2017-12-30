@@ -115,8 +115,13 @@ h1 {
   color : white;
   font-weight: 300;
 }
+h4 {
+  color : white;
+  /*font-weight: 200;*/
+}
 p, td, tr{
   font-size: 15px;
+  text-align: justify;
   font-weight: 400;
 }
 

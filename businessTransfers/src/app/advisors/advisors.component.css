@@ -118,6 +118,7 @@ h1 {
 p, td, tr{
   font-size: 17px;
   font-weight: 200;
+  text-align: justify;
 }
 .content > h1 {
   color : #9E8145;

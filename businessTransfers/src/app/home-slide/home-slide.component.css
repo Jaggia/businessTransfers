@@ -12,6 +12,7 @@ body { position: absolute; }
   float: left;
   margin-left: 5%;
   height: 250px;
+  padding-top: 0;
 }
 @media (max-width: 768px) {
   #box1 {
@@ -147,6 +148,7 @@ h1 {
 p{
   font-size: 17px;
   font-weight: 200;
+  text-align: justify;
 }
 
 #box1 .content > h1 {
