@@ -13,7 +13,7 @@ export class SideBarComponent implements OnInit {
   }
 
   collapseMe() {
-    if ($('ul').hasClass('in')) {
+    if ($('ul').hasClass('in') && ($('ul').attr('id') !== 'about' || $('ul').attr('id') !== 'about')) {
       $('ul').removeClass('in');
     }
   }

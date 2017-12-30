@@ -11,13 +11,13 @@
                     <i class="fa fa-home fa-lg"></i> Home
                 </a>
             </li>
-            <li
+            <li  data-toggle="collapse" href="#about"
                  routerLink="about-us" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" class="collapsed out">
-                <a>
+              <a>
                   <i class="fa fa-info-circle fa-lg"></i> About Us<i class="fa fa-chevron-down"></i>
-                </a>
+              </a>
             </li>
-            <ul class="sub-menu" id="about">
+            <ul class="sub-menu panel-collapse collapse" id="about">
                 <li
                      routerLink="btsoverview" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>BTS Overview</a></li>
                 <li
@@ -35,13 +35,13 @@
                 </a>
             </li>
 
-            <li
+            <li  data-toggle="collapse" href="#process"
                  routerLink="process" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" class="collapsed">
                 <a>
                   <i class="fa fa-bar-chart fa-lg"></i> Our Process<i class="fa fa-chevron-down"></i>
                 </a>
             </li>
-            <ul class="sub-menu" id="process">
+            <ul class="sub-menu panel-collapse collapse" id="process">
                 <li
                      routerLink="phase1" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a>Phase 1 - Preparation</a></li>
                 <li
