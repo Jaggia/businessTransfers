@@ -27,7 +27,7 @@ img {
   position: fixed;
 }
 .nav-side-menu .brand {
-  background-color: #23282e;
+  background-color: #000000;
   line-height: 50px;
   display: block;
   text-align: center;
@@ -151,7 +151,7 @@ img {
     padding-left: 20px;
     line-height: 50px !important;
     position: fixed;
-    background-color: black;
+    background-color: #000000;
   }
 }
 @media (min-width: 767px) {

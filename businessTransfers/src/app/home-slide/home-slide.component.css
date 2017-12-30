@@ -1,3 +1,6 @@
+html { overflow-y: scroll; }
+body { position: absolute; }
+
 #topParagraph {
   position: relative;
   float: left;
@@ -19,7 +22,9 @@
 #box2 {
   position: relative;
   float: right;
-  margin-bottom: 250px;
+  height: 300px;
+  padding-top: 0;
+  margin-bottom: 25vh;
 }
 
 .slide {
@@ -37,13 +42,13 @@
 }
 
 .blurred-bg-1{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
   background-repeat:repeat-y;
 	@include background-size(cover);
 	background-attachment: fixed;
 }
 .blurred-bg-2{
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
   background-repeat:repeat-y;
 	@include background-size(cover);
 	background-attachment: scroll;
@@ -62,7 +67,6 @@
 	text-shadow:0 1px 1px rgba(0,0,0,.4);
   display: flex;
   transition: box-shadow .3s ease;
-
 	&:active{
     cursor:move;
     @include box-shadow(0 20px 50px rgba(0,0,0,.9));
@@ -70,8 +74,11 @@
 
   .content{
     margin: auto;
-    overflow-y: scroll; /* has to be scroll, not auto */
+    /*overflow-y: scroll;*/
+    /* has to be scroll, not auto */
+    overflow: auto; /* has to be scroll, not auto */
     -webkit-overflow-scrolling: touch;
+    /*height: 100%;*/
   }
 }
 
@@ -148,4 +155,8 @@ p{
 
 #box2 .content > h1 {
   color : #9E8145;
+}
+
+.brand {
+  background-color: black;
 }

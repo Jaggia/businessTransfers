@@ -25,7 +25,7 @@ body { position: absolute; }
 }
 
 .blurred-bg-1{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
   background-repeat:repeat;
 	@include background-size(cover);
 	background-attachment: scroll;
@@ -72,7 +72,7 @@ body { position: absolute; }
   .slide {
     margin-bottom: 50px;
     overflow: auto;
-    max-height: 100vh;
+    min-height: 100vh;
   }
 }
 
@@ -125,7 +125,7 @@ p, td, tr{
   border-collapse:collapse;
   border-spacing:0;
   margin:0px auto;
-  overflow-y: scroll; /* has to be scroll, not auto */
+  overflow-y: hidden; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 }
 .tg td{font-family:Arial, sans-serif;
@@ -136,7 +136,7 @@ p, td, tr{
   overflow:auto;
   word-break:normal;
   text-align: center;
-  overflow-y: scroll; /* has to be scroll, not auto */
+  overflow-y: hidden; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 }
 .tg th{font-family:Arial, sans-serif;
@@ -148,7 +148,7 @@ p, td, tr{
   overflow:auto;
   word-break:normal;
   text-align: center;
-  overflow-y: scroll; /* has to be scroll, not auto */
+  overflow-y: hidden; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 }
 .tg .tg-yw4l{

@@ -25,7 +25,7 @@
 }
 
 .blurred-bg-1{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
   background-repeat:repeat;
   /*@include background-size(cover);*/
   background-attachment: scroll;
@@ -72,7 +72,7 @@
   .slide {
     margin-bottom: 50px;
     overflow: auto;
-    max-height: 100vh;
+    min-height: 100vh;
   }
 }
 
