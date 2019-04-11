@@ -12,7 +12,7 @@
 
 .slide {
   background-image:url('../../assets/homeImage.jpg');
-  max-height: 100vh;
+  min-height: 100vh;
   min-width: 100vw;
   background-attachment: fixed;
   background-position: center;
