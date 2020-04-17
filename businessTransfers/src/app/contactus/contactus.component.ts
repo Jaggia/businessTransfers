@@ -11,8 +11,8 @@ declare var google: any;
 })
 export class ContactusComponent implements OnInit {
   title: string = 'My first AGM project';
-  lat: number = 42.954850
-  lng: number = -71.504380
+  lat: number = 42.8085524
+  lng: number = -71.31956
 
   constructor() { }
 
